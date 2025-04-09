@@ -1,7 +1,7 @@
 name: 'Custom GitHub Action'
 description: 'A GitHub Action that takes an input and returns the square of the number'
 inputs:
-  num:
+  val:
     description: 'Enter a number'
     required: true
     default: "1"
