@@ -5,6 +5,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: my-step
-        run: echo "Hello, World!"
+        run: |
+          echo "my-step: Hello, World!"
+          sleep 1s
+          echo "my-step: Hello, World!"
+          sleep 1s
+          echo "my-step: Hello, World!"                  
       - name: my-second-step
-        run: echo "Hi, there"
+        run: |
+          echo "my-second-step: Hello, World!"
+          sleep 1s
+          echo "my-second-step: Hello, World!"
+          sleep 1s
+          echo "my-second-step: Hello, World!"
