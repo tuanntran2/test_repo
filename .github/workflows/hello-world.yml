@@ -12,7 +12,7 @@ jobs:
           sleep 5s
           echo "my-step: Hello, World!"                  
   my-second-job:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:                
       - name: my-second-step
         run: |
