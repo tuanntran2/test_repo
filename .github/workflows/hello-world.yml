@@ -7,14 +7,14 @@ jobs:
       - name: my-step
         run: |
           echo "my-step: Hello, World!"
-          sleep 1s
+          sleep 1m
           echo "my-step: Hello, World!"
-          sleep 1s
+          sleep 1m
           echo "my-step: Hello, World!"                  
       - name: my-second-step
         run: |
           echo "my-second-step: Hello, World!"
-          sleep 1s
+          sleep 1m
           echo "my-second-step: Hello, World!"
-          sleep 1s
+          sleep 1m
           echo "my-second-step: Hello, World!"
