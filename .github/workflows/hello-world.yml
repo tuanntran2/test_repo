@@ -7,14 +7,17 @@ jobs:
       - name: my-step
         run: |
           echo "my-step: Hello, World!"
-          sleep 1m
+          sleep 5s
           echo "my-step: Hello, World!"
-          sleep 1m
+          sleep 5s
           echo "my-step: Hello, World!"                  
+  my-second-job:
+    runs-on: ubuntu-latest
+    steps:                
       - name: my-second-step
         run: |
           echo "my-second-step: Hello, World!"
-          sleep 1m
+          sleep 5s
           echo "my-second-step: Hello, World!"
-          sleep 1m
+          sleep 5s
           echo "my-second-step: Hello, World!"
