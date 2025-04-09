@@ -22,7 +22,7 @@ runs:
       shell: bash
     - name: Pass Inputs to Shell
       run: |
-              echo "INPUT_NUM=${{ inputs.num }}" >> $GITHUB_ENV
+              echo "INPUT_NUM=${{ inputs.val }}" >> $GITHUB_ENV
       shell: bash
     - name: Fetch the number's square
       id: get-square
