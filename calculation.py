@@ -8,4 +8,4 @@ def get_square(value: int) -> int:
 
 if __name__ == "__main__":
     num = os.environ.get("INPUT_NUM")
-    print(f"result::get_square({num})")
+    print(f"result::{get_square(num)}")
