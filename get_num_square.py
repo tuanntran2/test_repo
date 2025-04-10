@@ -7,10 +7,10 @@ if num:
     try:
         num = int(num)
     except Exception:
-        exit('ERROR: the INPUT_NUM provided ("{}") is not an integer'.format(num))
+        exit('ERROR: INPUT_NUM ("{}") is not an integer'.format(num))
 else:
     num = 1
 
 # to set output, print to shell in following syntax
 # print(f"::set-output name=num_squared::{num ** 2}")
-print(f"num_squared::{num ** 2}")
+print(f"result::{num ** 2}")
