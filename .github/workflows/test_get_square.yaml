@@ -4,10 +4,11 @@ on: [push]
 
 jobs:
   get-num-square:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [windows-latest, macos-latest, ubuntu-latest]
+    runs-on: ubuntu-latest
+    # runs-on: ${{ matrix.os }}
+    # strategy:
+    #   matrix:
+    #     os: [windows-latest, macos-latest, ubuntu-latest]
     name: Returns the number square
     steps:
       - name: Checkout

@@ -1,0 +1,21 @@
+name: Resusable Worklfow
+
+on:
+  workflow_call:
+    inputs:
+      name:
+        description: 'Name of the person'
+        required: true
+        type: string
+      greeting:
+        description: 'Greeting message'
+        required: false
+        default: 'Hello'
+        type: string
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "${{ inputs.greeting }}, ${{ inputs.name }}!"
