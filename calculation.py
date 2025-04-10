@@ -1,4 +1,3 @@
-# src/get_num_square.py
 import os
 
 
