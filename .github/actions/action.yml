@@ -1,0 +1,31 @@
+name: 'Calculate Square GitHub Action'
+description: 'A GitHub Action that takes an input and returns the square of the number'
+inputs:
+  num:
+    description: 'Enter a number'
+    required: true
+    default: "1"
+outputs:
+  result:
+    description: 'Square of the input number'
+    # need to specify the extra `value` field for `composite` actions
+    value: ${{ steps.get_square.outputs.result }}
+runs:
+  using: 'composite'
+  steps:
+    - name: Install Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'  
+    - name: Install Dependencies
+      run: pip install -r requirements.txt
+      shell: bash
+    - name: Pass Inputs to Shell
+      run: |
+        echo "INPUT_NUM=${{ inputs.num }}" >> $GITHUB_ENV
+      shell: bash
+    - name: Fetch result
+      id : get-square
+      run: python calculation.py
+      shell: bash
+  
