@@ -26,6 +26,6 @@ runs:
       shell: bash
     - name: Fetch result
       id : get-square
-      run: python get_num_square.py
+      run: python calculation.py
       shell: bash
   
