@@ -10,6 +10,10 @@ def get_square_root(value: int) -> int:
     return math.sqrt(value)
 
 
+def get_sin(value: int) -> int:
+    return math.sin(value)
+
+
 def get_factorial(value: int) -> int:
     if value in [0, 1]:
         return 1
